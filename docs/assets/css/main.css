@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
-  /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -19,7 +18,7 @@
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
-  font-feature-settings: 'liga';
+  font-feature-settings: "liga";
 }
 
 body {
@@ -63,7 +62,7 @@ p {
 }
 
 a {
-  color: #732f2b;
+  color: #576799;
 }
 
 img {
@@ -188,7 +187,6 @@ img {
 .flex {
   display: flex;
 }
-
 .flex.right {
   flex-direction: row-reverse;
 }
@@ -196,7 +194,6 @@ img {
 .closed {
   animation: closeMenu 300ms ease-in-out forwards;
 }
-
 @keyframes closeMenu {
   0% {
     bottom: 0vh;
@@ -209,7 +206,6 @@ img {
 .open {
   animation: openMenu 300ms ease-in-out forwards;
 }
-
 @keyframes openMenu {
   0% {
     bottom: -78vh;
@@ -222,12 +218,11 @@ img {
 header {
   width: 100vw;
   height: 80vh;
-  background: #d08581;
+  background: #c5cbde;
   position: fixed;
   padding: 20px;
   box-sizing: border-box;
 }
-
 header .menuBtn {
   position: absolute;
   left: 50%;
@@ -242,9 +237,8 @@ header .menuBtn {
   font-size: 2rem;
   box-sizing: border-box;
   top: -60px;
-  background: #d08581;
+  background: #c5cbde;
 }
-
 header .navbar {
   max-width: 1080px;
   max-height: -webkit-fill-available;
@@ -253,27 +247,24 @@ header .navbar {
   color: #f2f2f2;
   text-transform: uppercase;
 }
-
 header span {
   display: inline-block;
-  background: #732f2b;
+  background: #576799;
   padding: 20px;
   margin: 0px 20px;
   box-sizing: border-box;
   border: 5px solid transparent;
   height: fit-content;
 }
-
 header span:focus,
 header span:hover {
   outline: none;
-  border: 5px solid #e5bbb8;
+  border: 5px solid #f5f6fa;
 }
-
 header span.selected {
   outline: none;
-  background: #e5bbb8;
-  border-bottom: 5px solid #732f2b;
+  background: #f5f6fa;
+  border-bottom: 5px solid #576799;
 }
 
 .absolute {
@@ -330,7 +321,6 @@ section {
   color: #4d4d4d;
   z-index: -1;
 }
-
 .alt:before {
   content: "Alternativ";
   font-size: 0.8rem;
@@ -353,53 +343,63 @@ section {
   h1 {
     font-size: 4rem;
   }
+
   h2 {
     font-size: 3rem;
   }
+
   h3 {
     font-size: 1.7rem;
   }
+
   p {
     font-size: 1.3rem;
   }
 }
-
 @media (max-width: 900px) and (orientation: portrait) {
   h1 {
     font-size: 2.5rem;
   }
+
   h2 {
     font-size: 2rem;
   }
+
   h3 {
     font-size: 1.5rem;
   }
+
   p {
     font-size: 1rem;
   }
+
   .page-content {
     grid-template-columns: 1fr 1fr;
     padding: 15px;
   }
+
   .page-content .card {
     width: 40vw;
     height: 550px;
   }
 }
-
 @media (max-width: 900px) and (orientation: landscape) {
   h1 {
     font-size: 2.5rem;
   }
+
   h2 {
     font-size: 2rem;
   }
+
   h3 {
     font-size: 1.8rem;
   }
+
   p {
     font-size: 1.3rem;
   }
+
   .page-content .card {
     width: 80vw;
   }
@@ -425,24 +425,28 @@ section {
     align-self: start;
   }
 }
-
 @media (max-width: 680px) and (orientation: landscape) {
   h1 {
     font-size: 2.5rem;
   }
+
   h2 {
     font-size: 2rem;
   }
+
   h3 {
     font-size: 1.5rem;
   }
+
   p {
     font-size: 1.1rem;
   }
+
   .page-content {
     grid-template-columns: 1fr;
     padding: 15px;
   }
+
   .page-content .card {
     width: 90vw;
     grid-column: 1/2;
@@ -464,95 +468,120 @@ section {
     align-self: start;
   }
 }
-
 @media (max-width: 680px) and (orientation: portrait) {
   h1 {
     font-size: 2.5rem;
   }
+
   h2 {
     font-size: 2rem;
   }
+
   h3 {
     font-size: 1.5rem;
   }
+
   p {
     font-size: 1.1rem;
   }
 }
-
 @media screen and (max-width: 420px) and (orientation: portrait) {
   h1 {
     font-size: 2.5rem;
   }
+
   h2 {
     font-size: 2rem;
   }
+
   h3 {
     font-size: 1.5rem;
   }
+
   p {
     font-size: 1.2rem;
   }
+
   .g1 {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .g2 {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .g3 {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .g4 {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .g5 {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .span1 {
     grid-column: 1/2;
   }
+
   .span2 {
     grid-column: 1/2;
   }
+
   .span3 {
     grid-column: 1/2;
   }
+
   .span4 {
     grid-column: 1/2;
   }
+
   .c1 {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .c2 {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .c3 {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .c4 {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .c5 {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .r1 {
     grid-template-rows: repeat(1, 1fr);
   }
+
   .r2 {
     grid-template-rows: repeat(1, 1fr);
   }
+
   .r3 {
     grid-template-rows: repeat(1, 1fr);
   }
+
   .r4 {
     grid-template-rows: repeat(1, 1fr);
   }
+
   .r5 {
     grid-template-rows: repeat(1, 1fr);
   }
+
   .grid {
     padding: 10px;
   }
+
   section {
     width: 90vw;
   }
@@ -571,6 +600,7 @@ section {
   section .c5 {
     grid-template-columns: 1fr 2fr;
   }
+
   .paradigm .section:nth-of-type(1) {
     border-bottom: 1px solid rgba(77, 77, 77, 0.2);
   }
@@ -583,6 +613,7 @@ section {
   .paradigm .c3 .pgn {
     grid-column: 1/4;
   }
+
   header .grid {
     padding: 0px;
   }
